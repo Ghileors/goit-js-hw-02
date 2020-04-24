@@ -1,0 +1,21 @@
+:root {
+  --main-color: #212121;
+  --links-color: #1976d2;
+  --links-color-change: #ff4081;
+  line-height: 1.5;
+  font-size: 16px;
+  --primary-font-stack: "PT Sans", sans-serif;
+}
+
+body {
+  font-family: var(--primary-font-stack);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--links-color-change);
+}
+.link {
+  color: var(--links-color);
+  text-decoration: none;
+}
