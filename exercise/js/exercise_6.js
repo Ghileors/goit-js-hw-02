@@ -4,11 +4,10 @@ let total = 0;
 
 input = prompt('Введите число:');
 
-const culc = function(num) {
-    numbers.push(input);
-    total += input
-    if (num === null) {
-        alert(`Общая сумма чисел равна ${total}`)
-    }
-
+if (input === null) {
+  console.log('Cancel');
+} else {
+  prompt('Введите число:');
+  numbers.push(input);
+  console.log(numbers);
 }
