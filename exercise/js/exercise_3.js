@@ -34,5 +34,6 @@ console.log(findLongestWord('May the force be with you')); // 'force'
 // for (const word of string) {
 //   if (longestWord.length < word.length) {
 //     longestWord = word;
+//     console.log
 //   }
 // }
