@@ -4,12 +4,12 @@ let total = 0;
 
 while (true) {
   input = prompt('Введите число:');
-  numbers.push(input);
+  numbers.push(input);  
 
   if (input === null) {
     for (const number of numbers) {
-      total += Number(number);
-    }
+        total += Number(number);
+      }
     console.log(`Общая сумма чисел = ${total}`);
     break;
   }
