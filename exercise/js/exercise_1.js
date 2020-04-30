@@ -1,10 +1,10 @@
 const logItems = function (array) {
     for (const index of array) {
-      for (let i = 1; i < array.length; i += 1) {
-        let number = array.indexOf(index);
-        console.log(`${number + 1} - ${index}`);
-      }
+      let number = array.indexOf(index);        
+      console.log( `${number + 1} - ${index}`);
+      
     }
+    
 };
 
 logItems(["Mango", "Poly", "Ajax", "Lux", "Jay", "Kong"]);
