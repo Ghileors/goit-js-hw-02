@@ -5,11 +5,11 @@ const formatString = function (string) {
   let normalizeString;
   if (string.length > 40) {
     normalizeString = string.slice(0, 39);
-    let arrFromString = normalizeString.split(' ');
-    arrFromString.push('...');
-    normalizeString = arrFromString.join(' ');
+    // let arrFromString = normalizeString.split(' ');
+    // arrFromString.push('...');
+    // normalizeString = arrFromString.join(' ');
   }
-  return normalizeString;
+  return `${normalizeString}...`;
 };
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));

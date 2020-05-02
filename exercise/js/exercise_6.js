@@ -1,16 +1,18 @@
-let input;
 const numbers = [];
 let total = 0;
+let input;
 
-while (true) {
-  input = prompt('Введите число:');
-  numbers.push(input);  
+while (input !== null) {
+    input = prompt('Введите число:');
 
-  if (input === null) {
-    for (const number of numbers) {
-        total += Number(number);
-      }
-    console.log(`Общая сумма чисел = ${total}`);
-    break;
-  }
+    const number = Number(input);
+
+    if (number) {
+        numbers.push(number);
+        total += number;
+    }
+}
+
+if (numbers.length > 0) {
+    console.log(`Общая сумма чисел = ${total}`, numbers);
 }
