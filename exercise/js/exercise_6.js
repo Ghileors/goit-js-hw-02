@@ -9,10 +9,12 @@ while (input !== null) {
 
     if (number) {
         numbers.push(number);
-        total += number;
     }
 }
 
 if (numbers.length > 0) {
-    console.log(`Общая сумма чисел = ${total}`, numbers);
+    for (const number of numbers) {
+        total += number;
+    }
 }
+console.log(`Общая сумма чисел = ${total}`);
