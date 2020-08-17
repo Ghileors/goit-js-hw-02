@@ -1,12 +1,12 @@
-const checkForSpam = function(message) {
-    let normalizeMessage = message.toLowerCase();
-        if (normalizeMessage.includes('spam') || normalizeMessage.includes('sale')) {
-            return true;
-        }
-    return false;
+const checkForSpam = function (message) {
+    message = message.toLowerCase();
+
+    return message.includes('sale') || message.includes('spam') ? true : false;
 };
-  
-  
+
+/*
+ * Вызовы функции для проверки работоспособности реализации.
+ */
 console.log(checkForSpam('Latest technology news')); // false
 
 console.log(checkForSpam('JavaScript weekly newsletter')); // false
